@@ -13,7 +13,7 @@ const Select = ({onCategorySelect}) => {
    <div className='select'>
       {uniqueCategories.map((category, index) => (
         <div key={index}>
-          <p className='iselect' onClick={getCategory}>{category}</p>
+          <p className='iselect' id={`filter-btn-${index+1}`} onClick={getCategory}>{category}</p>
         </div>
       ))}
     </div>
