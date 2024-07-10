@@ -1,12 +1,55 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
+button {
+  color: #27aedb;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.body {
+  background-color: rgb(241, 245, 248);
+}
+.menus {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+}
 
-button{
-    color: #27aedb;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+.article {
+  width: 60%;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0%;
+}
+
+img {
+  flex: 1;
+  height: 100%;
+  width: 40%;
+  border: 2px solid orange;
+}
+
+.select {
+  display: flex;
+  gap: 1rem;
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.iselect {
+  text-transform: capitalize;
 }
