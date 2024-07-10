@@ -18,12 +18,12 @@ const Menu = () => {
     useEffect(() => {
     },[])
     return (
-        <div className="menu-container">
+        <div className="menu-container" id="main">
             <h2>Our Menu</h2>
             <Select onCategorySelect={handleCategorySelect}/>
         <div className="menus">
             { selectedCategory.length > 0 ? newData.map((menu) => (
-                <div key={menu.id} className="menu">
+                <div key={menu.id} className="menu" data-test-id={`menu-item-${selectedCategory.toLowerCase()}`}>
                     <img src={menu.img} alt={menu.title}/>
                     <div className="article">
                         <div className="head">
@@ -37,7 +37,7 @@ const Menu = () => {
                 </div>
             )) : (
                 MenuData.map((menu) => (
-                <div key={menu.id} className="menu">
+                <div key={menu.id} className="menu" data-test-id={`menu-item-${selectedCategory.toLowerCase()}`}>
                     <img src={menu.img} alt={menu.title}/>
                     <div className="article">
                         <div className="head">
